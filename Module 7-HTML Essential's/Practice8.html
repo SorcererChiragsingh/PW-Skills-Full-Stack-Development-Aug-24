@@ -1,63 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Conference Schedule</title>
-  <style>
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      cellpadding: 10px; /* Adjust padding as needed */
-    }
-
-    th, td {
-      border: 1px solid black;
-      text-align: center;
-      padding: 8px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Schedule</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th[colspan="5"] {
+            font-size: 24px;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 <body>
     <table>
         <tr>
-          <th>Time</th>
-          <th>Room 1</th>
-          <th>Room 2</th>
-          <th>Room 3</th>
-          <th>Room 4</th>
+            <th colspan="5">Conference Schedule</th>
         </tr>
         <tr>
-          <td rowspan="2">9:00 AM - 10:00 AM</td>
-          <td>Keynote</td>
-          <td colspan="2">Session A</td>
-          <td>Session B</td>
+            <th>Time</th>
+            <th>Room 1</th>
+            <th>Room 2</th>
+            <th>Room 3</th>
+            <th>Room 4</th>
         </tr>
         <tr>
-          <td></td>
-          <td>Session D</td>
-          <td>Session E</td>
-          <td>Session C</td>
+            <td>9:00 AM - 10:00 AM</td>
+            <td rowspan="2">Keynote</td>
+            <td>Session A</td>
+            <td>Session B</td>
+            <td rowspan="2">Session C</td>
         </tr>
         <tr>
-          <td rowspan="2">10:30 AM - 11:30 AM</td>
-          <td></td>
-          <td colspan="3">Session F</td>
+            <td>10:30 AM - 11:30 AM</td>
+            <td>Session D</td>
+            <td>Session E</td>
         </tr>
         <tr>
-          <td colspan="4">Lunch Break</td>
+            <td>12:00 PM - 1:00 PM</td>
+            <td colspan="4">Lunch Break</td>
         </tr>
         <tr>
-          <td rowspan="2">1:00 PM - 2:00 PM</td>
-          <td>Session G</td>
-          <td></td>
-          <td>Session I</td>
-          <td>Session J</td>
+            <td>1:00 PM - 2:00 PM</td>
+            <td>Session G</td>
+            <td>Session H</td>
+            <td>Session I</td>
+            <td>Session J</td>
         </tr>
-        <tr>
-          <td>Session K</td>
-          <td>Session H</td>
-          <td>Session L</td>
-          <td>Session M</td>
-        </tr>
-      </table>
+    </table>
 </body>
 </html>
+
+
