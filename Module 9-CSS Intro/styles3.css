@@ -1,0 +1,76 @@
+/* Custom Color Palette */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f9f9f9;
+    --input-bg-color: #ecf0f1;
+    --text-color: #2c3e50;
+    --button-color: #e74c3c;
+    --button-hover-color: #c0392b;
+    --opaque-bg-color: rgba(46, 204, 113, 0.5); /* Semi-transparent green for opacity */
+}
+
+/* Form Container */
+.form-container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* Form Sections */
+.form-section {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: var(--input-bg-color);
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+/* Custom Opacity Section */
+.form-section--opaque {
+    background-color: var(--opaque-bg-color); /* Applying opacity */
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Button Styling */
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--button-color);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: var(--button-hover-color);
+}

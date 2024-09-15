@@ -1,0 +1,48 @@
+/* Block: content
+   Element: __paragraph
+   Modifier: --primary, --secondary, --highlighted, --large 
+*/
+
+/* Base paragraph styling for the content block */
+.content__paragraph {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Modifier for the primary paragraph */
+.content__paragraph--primary {
+    color: #2c3e50;
+    font-size: 16px;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-left: 5px solid #3498db;
+}
+
+/* Modifier for the secondary paragraph */
+.content__paragraph--secondary {
+    color: #8e44ad;
+    font-size: 14px;
+    background-color: #f2f0f9;
+    padding: 10px;
+    border-left: 5px solid #9b59b6;
+}
+
+/* Modifier for the highlighted paragraph */
+.content__paragraph--highlighted {
+    color: #e74c3c;
+    font-size: 15px;
+    background-color: #fceae8;
+    padding: 10px;
+    border-left: 5px solid #e74c3c;
+    font-weight: bold;
+}
+
+/* Modifier for the large paragraph */
+.content__paragraph--large {
+    color: #34495e;
+    font-size: 18px;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-left: 5px solid #2980b9;
+}

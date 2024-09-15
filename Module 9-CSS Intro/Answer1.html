@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Internal style targeting the div elements */
+        .box {
+            background-color: lightblue; /* This will be overridden by inline or external styles */
+            padding: 20px;
+            border: 2px solid black;
+        }
+    </style>
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Inline CSS -->
+    <div class="box" style="background-color: lightgreen;">
+        <!-- This inline style will override both internal and external CSS for background-color -->
+        <p>This is a box styled with inline CSS.</p>
+    </div>
+
+    <div class="box">
+        <p>This is a box styled with internal and external CSS.</p>
+    </div>
+
+    <div class="box">
+        <p>This is another box styled with internal and external CSS.</p>
+    </div>
+
+    <!-- Note: Add a comment explaining that inline styles have the highest priority -->
+     
+    <!-- Inline CSS > External CSS > Internal CSS when targeting the same element -->
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+/* External CSS */
+.box {
+    background-color: lightcoral; /* This will be overridden by internal or inline styles */
+    color: white;
+    font-family: Arial, sans-serif;
+}
