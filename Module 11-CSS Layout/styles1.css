@@ -1,0 +1,59 @@
+/* Custom Color Palette */
+:root {
+    --navbar-bg-color: #2c3e50;       /* Dark blue */
+    --link-color: #ecf0f1;            /* Light grey */
+    --link-hover-color: #3498db;      /* Light blue on hover */
+    --link-padding: 15px 20px;
+}
+
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: var(--navbar-bg-color); /* Background color for the navbar */
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center the navigation menu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for effect */
+}
+
+.navbar__menu {
+    list-style-type: none;
+    display: flex;
+}
+
+/* Navigation Links */
+.navbar__link {
+    text-decoration: none;
+    color: var(--link-color); /* Default link color */
+    padding: var(--link-padding);
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for links */
+.navbar__link:hover {
+    color: var(--link-hover-color); /* Change color on hover */
+}
+
+/* Responsive layout for mobile devices */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: flex-start; /* Align links to the left on smaller screens */
+    }
+
+    .navbar__menu {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .navbar__link {
+        padding: 10px 15px;
+        text-align: left;
+    }
+}

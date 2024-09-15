@@ -1,0 +1,29 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4; /* Light background color */
+}
+
+/* Container styling */
+.container {
+    padding: 20px;
+    background-color: #7a7777; /* White background for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* List styling */
+.item-list {
+    list-style-type: disc; /* Default bullet points */
+    padding-left: 20px; /* Space between the bullet and text */
+}
+
+.item-list li {
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 1.2rem; /* Slightly larger font size */
+}

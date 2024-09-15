@@ -1,0 +1,70 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    width: 600px;
+}
+
+.navbar__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar__item a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.navbar__item a:hover {
+    color: #f39c12;
+}
+
+/* Border styles */
+.navbar__item--solid a {
+    border: 2px solid white;
+}
+
+.navbar__item--dashed a {
+    border: 2px dashed white;
+}
+
+.navbar__item--dotted a {
+    border: 2px dotted white;
+}
+
+.navbar__item--double a {
+    border: 3px double white;
+}
+
+.navbar__item--groove a {
+    border: 3px groove white;
+}
+
+/* Optional: Additional hover effect to change border color */
+.navbar__item a:hover {
+    border-color: #f39c12;
+}

@@ -1,0 +1,41 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #c87a2c; /* Light gray background for the body */
+}
+
+/* Container styling */
+.container {
+    padding: 20px;
+}
+
+/* Card styling */
+.card {
+    background-color: #cd263c; /* Blue background for the card */
+    color: #fff; /* White text color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 300px;
+    transition: opacity 0.3s ease;
+    opacity: 0.7; /* Semi-transparent by default */
+}
+
+/* Card hover effect */
+.card:hover {
+    opacity: 1; /* Fully opaque on hover */
+}
+
+/* Styling for the card title and text */
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    margin: 0;
+}
