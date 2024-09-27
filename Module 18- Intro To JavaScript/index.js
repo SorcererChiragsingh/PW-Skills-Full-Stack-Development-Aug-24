@@ -13,3 +13,4 @@ console.log (3+9);
 
 */
 
+console.log (6*5);
