@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Dropdown Menu</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      position: relative; /* Required for positioning dropdowns */
+    }
+
+    a {
+      text-decoration: none;
+      color: blue;
+      display: block;
+      padding: 8px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Top-Level Menu Styling */
+    .menu {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      border: 1px dashed #ccc;
+      padding: 10px;
+    }
+
+    .menu > li {
+      margin-bottom: 5px;
+    }
+
+    /* Submenu Styling */
+    .submenu {
+      display: none; /* Hidden by default */
+      margin-left: 20px;
+    }
+
+    .submenu li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#" class="has-submenu">Services</a>
+      <ul class="submenu">
+        <li><a href="#">Submenu 4</a></li>
+        <li><a href="#">Submenu 5</a></li>
+        <li><a href="#">Submenu 6</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Contact</a>
+    </li>
+  </ul>
+
+  <script>
+    // Select all elements with submenus
+    const menuItems = document.querySelectorAll(".has-submenu");
+
+    menuItems.forEach(item => {
+      const submenu = item.nextElementSibling;
+
+      // Show submenu on mouseenter
+      item.addEventListener("mouseenter", () => {
+        submenu.style.display = "block";
+      });
+
+      // Hide submenu on mouseleave
+      item.addEventListener("mouseleave", () => {
+        submenu.style.display = "none";
+      });
+
+      // Add the same functionality for submenu hover
+      submenu.addEventListener("mouseenter", () => {
+        submenu.style.display = "block";
+      });
+
+      submenu.addEventListener("mouseleave", () => {
+        submenu.style.display = "none";
+      });
+    });
+  </script>
+</body>
+</html>
